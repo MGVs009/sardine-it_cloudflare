@@ -1,8 +1,8 @@
 import tkinter as tk
 from PIL import Image, ImageTk
 root = tk.Tk()
-root.title("Cloudflare it!!")
-root.geometry("800x600")
+root.title("Sardine-it!!")
+root.geometry("1920x1080")
 sardinha_zul = ImageTk.PhotoImage(Image.open("sardinha_azul.png").resize((30, 30)))
 sardinha_laranja = ImageTk.PhotoImage(Image.open("sardinha_laranja.png").resize((30, 30)))
 canvas = tk.Canvas(root)
@@ -21,7 +21,7 @@ def printBinario():
     lbl.config(text=n_letras)
     for widget in frame.winfo_children():
         widget.destroy()
- #0 é pra sardinhas azuis e 1 para sardinhas laranjas
+#0 e pra sardinhas azuis e um pras laranja 
     row, col = 0, 0
     max_per_row = 20  
     for bit in binario.replace(" ", ""): 
@@ -40,3 +40,4 @@ printButton.pack()
 lbl = tk.Label(root, text="número de caractéres em binário: 0")
 lbl.pack()
 root.mainloop()
+
